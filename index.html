@@ -1,92 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tugas Studi Pembatal Syahadat</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Pendidikan Agama</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-<style>
-body {
-    background-color: #f8f9fa;
-}
-.hero {
-    background: linear-gradient(135deg, #0d6efd, #0a58ca);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-.card-custom {
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-.footer {
-    background: #0d6efd;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
-</style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+        scroll-behavior: smooth;
+      }
 
-</head>
-<body>
+      body {
+        background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+      }
 
-<div class="hero">
-    <h1>Tugas Perkuliahan</h1>
-    <h3>Studi Kasus Praktik Pembatal Syahadat</h3>
-    <p>Nama: Rio Elvin <br> NIM: ___312310275_______ <br> Mata Kuliah: Pendidikan Agama
-        __________</p>
-</div>
+      /* Navbar */
+      nav {
+        position: fixed;
+        width: 100%;
+        background: rgba(44, 62, 80, 0.9);
+        padding: 15px 0;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+      }
 
-<div class="container mt-5">
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
 
-    <div class="card p-4 card-custom mb-4">
-        <h4 class="text-primary">Studi Kasus</h4>
-        <p>
-        Di era digital saat ini, banyak konten di media sosial yang berisi candaan
-        atau pernyataan yang meremehkan ajaran agama. Salah satu contoh praktik
-        pembatal syahadat adalah seseorang yang secara sadar menghina Allah,
-        Rasulullah ﷺ, atau hukum Islam.
-        </p>
+      nav ul li {
+        margin: 0 20px;
+      }
 
-        <p>
-        Contoh kasus yang sering ditemukan di internet adalah pernyataan bahwa
-        hukum buatan manusia lebih baik daripada hukum Allah secara mutlak.
-        Dalam kajian aqidah, pernyataan seperti ini termasuk dalam kategori
-        pembatal keislaman apabila diucapkan dengan sadar dan tanpa paksaan.
-        </p>
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #4ca1af;
+      }
+
+      /* Hero */
+      .hero {
+        height: 100vh;
+        background: linear-gradient(135deg, #2c3e50, #4ca1af);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        margin-top: 10px;
+      }
+
+      /* Section */
+      section {
+        padding: 90px 20px;
+        max-width: 900px;
+        margin: auto;
+      }
+
+      /* Card */
+      .card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 25px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(40px);
+        opacity: 0;
+        transition: 0.6s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card.show {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        color: #2c3e50;
+      }
+
+      p {
+        line-height: 1.7;
+      }
+
+      /* Kesimpulan Box */
+      .highlight {
+        margin-top: 15px;
+        padding: 15px;
+        border-left: 5px solid #4ca1af;
+        background: #f1f9fb;
+        border-radius: 8px;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #2c3e50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#digital">Era Digital</a></li>
+        <li><a href="#kisah">Kisah Qur'an</a></li>
+        <li><a href="#akhir">Penutup</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero" id="home">
+      <div>
+        <h1><i class="fa-solid fa-book"></i> Tugas Pendidikan Agama</h1>
+        <p>Rio Elvin | NIM: 312310275</p>
+      </div>
     </div>
 
-    <div class="card p-4 card-custom mb-4">
-        <h4 class="text-primary">Alasan dan Landasan</h4>
-        <ul>
-            <li>Menghina Allah atau Rasul termasuk pembatal keislaman.</li>
-            <li>Meyakini hukum selain hukum Allah lebih baik secara mutlak termasuk pembatal.</li>
-            <li>Dalil: QS. At-Taubah ayat 65–66.</li>
-        </ul>
+    <!-- ERA DIGITAL -->
+    <section id="digital">
+      <div class="card">
+        <h2>
+          <i class="fa-solid fa-mobile-screen"></i> Pembatal Syahadat di Era
+          Digital
+        </h2>
 
         <p>
-        Dalam ayat tersebut dijelaskan bahwa memperolok-olok Allah dan Rasul-Nya
-        dapat menyebabkan seseorang jatuh pada kekufuran meskipun dilakukan
-        dengan bercanda.
+          Di era sekarang, penggunaan media sosial sudah menjadi bagian dari
+          kehidupan sehari-hari. Banyak orang dengan mudah menyampaikan pendapat
+          tanpa memikirkan dampaknya.
         </p>
-    </div>
 
-    <div class="card p-4 card-custom">
-        <h4 class="text-primary">Referensi</h4>
         <p>
-        Al-Manhaj. "Makna Syahadatain, Rukun, Syarat, Konsekuensi dan yang Membatalkannya".  
-        https://almanhaj.or.id/2101-makna-syahadatain-rukun-syarat-konsekuensi-dan-yang-membatalkannya.html
+          Tidak sedikit juga yang menjadikan agama sebagai bahan candaan,
+          seperti menghina Allah atau Rasul, atau menganggap hukum manusia lebih
+          baik dari hukum Allah. Hal ini tentu menjadi sesuatu yang harus
+          dihindari.
         </p>
-    </div>
 
-</div>
+        <p>
+          Karena itu, penting untuk lebih berhati-hati dalam berbicara dan
+          menggunakan media digital, agar tidak terjerumus pada hal yang bisa
+          merusak keimanan.
+        </p>
 
-<div class="footer">
-    © 2026 - Rio Elvin
-</div>
+        <div class="highlight">
+          <b>Kesimpulan:</b> Di era digital, menjaga ucapan dan sikap sangat
+          penting, karena apa yang dianggap sepele bisa berdampak besar terhadap
+          iman seseorang.
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- KISAH QURAN -->
+    <section id="kisah">
+      <div class="card">
+        <h2><i class="fa-solid fa-mosque"></i> Kisah dalam Al-Qur'an</h2>
+
+        <p>
+          Dalam Al-Qur’an terdapat banyak kisah yang bisa dijadikan pelajaran
+          hidup. Kisah tersebut tidak hanya sekadar cerita, tetapi memiliki
+          makna yang dalam.
+        </p>
+
+        <p>
+          Contohnya kisah Nabi Ibrahim yang tetap teguh dalam keimanannya,
+          meskipun menghadapi banyak ujian. Selain itu, ada juga kisah Nabi
+          Yusuf yang mengajarkan kesabaran dan keteguhan dalam menghadapi
+          cobaan.
+        </p>
+
+        <p>
+          Dari kisah-kisah tersebut, kita bisa belajar bahwa setiap ujian pasti
+          memiliki hikmah dan tujuan yang baik bagi kehidupan manusia.
+        </p>
+
+        <div class="highlight">
+          <b>Kesimpulan:</b> Kisah dalam Al-Qur’an memberikan banyak pelajaran,
+          terutama tentang kesabaran, keimanan, dan bagaimana menghadapi ujian
+          hidup.
+        </div>
+      </div>
+    </section>
+
+    <!-- PENUTUP -->
+    <section id="akhir">
+      <div class="card">
+        <h2><i class="fa-solid fa-check-circle"></i> Penutup</h2>
+
+        <p>
+          Dari kedua pembahasan tersebut, dapat dipahami bahwa menjaga iman dan
+          mengambil pelajaran dari kehidupan sangatlah penting.
+        </p>
+
+        <p>
+          Baik melalui perkembangan zaman maupun kisah dalam Al-Qur’an, keduanya
+          memberikan arahan agar manusia dapat menjalani hidup dengan lebih
+          baik.
+        </p>
+      </div>
+    </section>
+
+    <footer>&copy; 2026 - Rio Elvin</footer>
+
+    <script>
+      const cards = document.querySelectorAll(".card");
+
+      window.addEventListener("scroll", () => {
+        cards.forEach((card) => {
+          const pos = card.getBoundingClientRect().top;
+          if (pos < window.innerHeight - 100) {
+            card.classList.add("show");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
